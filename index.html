@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - Guía Turística</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>🌴 La Guía Turística</h1>
+            <p>¡Demuestra todo lo que has aprendido!</p>
+        </header>
+
+        <section id="inicio" class="panel">
+            <h2>¡Bienvenido a las actividades!</h2>
+
+            <p>
+                Pon a prueba tus conocimientos sobre la guía turística
+                con estas tres actividades.
+            </p>
+
+            <div class="info">
+                <span>📝 3 actividades</span>
+                <span>❓ 17 preguntas</span>
+                <span>🏆 Puntuación automática</span>
+            </div>
+
+            <button id="comenzar">Comenzar</button>
+        </section>
+
+        <section id="actividad" class="panel oculto">
+
+            <div class="progreso">
+                <span id="nombreActividad"></span>
+                <span id="contador"></span>
+            </div>
+
+            <div class="barra">
+                <div id="relleno"></div>
+            </div>
+
+            <h2 id="pregunta"></h2>
+
+            <div id="opciones"></div>
+
+            <p id="mensaje"></p>
+
+            <button id="siguiente" disabled>
+                Siguiente pregunta
+            </button>
+
+        </section>
+
+        <section id="resultado" class="panel oculto">
+            <h2>🎉 ¡Actividad completada!</h2>
+            <p id="puntuacion"></p>
+            <button id="reiniciar">Volver a comenzar</button>
+        </section>
+
+        <footer>
+            <p>🌎 Aprende, descubre y viaja.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
